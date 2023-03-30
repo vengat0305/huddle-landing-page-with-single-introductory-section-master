@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+:root{
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-Soft-Magenta: hsl(300, 69%, 71%);
+
+  --ff-Poppins:'Poppins', sans-serif;
+  --ff-Open-Sans:'Open Sans', sans-serif;
+}
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 0.5rem 2.7rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #fbfcff;
+  color: var(--clr-violet);
+  box-shadow: 3px 3px 3px#1c2042;
+}
+
+.btn:hover{
+  background-color: var(--clr-Soft-Magenta);
+  color: var(--clr-violet);
+  cursor: pointer;
+}
+
+/*landing pages */
+body{
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: var(--clr-violet);
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem 2.25rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.nav-container{
+  height: rem;
+}
+.logo{
+  width: 11rem;
+}
+
+.header{
+  height: calc(100vh-14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.left-container{
+  padding: 0.5rem;
+  
+}
+.right-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.title{
+  color: #fff;
+  line-height: 3rem;
+  font-size:2.6rem;
+  font-weight: 600;
+  
+}
+.description{
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-family: var(--ff-Poppins);
+}
+
+.footer{
+  height: 5rem;
+  width: 100%;
+}
+
+.logo-list{
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Mebile  devices (mobile) */
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) 
+  {
+  body{
+  background-image: url(/images/bg-mobile.svg);
+  background-color: var(--clr-violet);
+  }
+  
+  .header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  }
+  .left-container{
+    width: 50%;
+    gap: 2rem;
+
+  }
+
+  .right-container{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.3rem;
+  line-height: 1.7rem;
+}
+.title{
+  font-size: 3.2rem;
+  font-weight: 600;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: flex-start;
+}
+.description{
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: flex-start;
+}
+  .btn-register{
+  margin-left: -27rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: flex-start
+  }
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}
